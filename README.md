@@ -6,8 +6,8 @@ Useful script tidbits
 ### Find files with extension and run a command against those files ###
 `find . -name "*.txt" -type f -exec head -n2 {} \;`
 
-### Extract lines beginning with a patter ###
-sed -n -e '/^{"pattern"/p' infile.txt 
+### Extract lines beginning with a pattern ###
+`sed -n -e '/^{"pattern"/p' infile.txt` 
 
 
 ### Remove space between first and second column of a text file: ###
