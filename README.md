@@ -6,6 +6,10 @@ Useful script tidbits
 ### Find files with extension and run a command against those files ###
 `find . -name "*.txt" -type f -exec head -n2 {} \;`
 
+For example, find all files in a directory tree where the name matches a pattern and grep them:
+
+`find . -name \*.txt -exec grep pattern {} +`
+
 ### Extract lines beginning with a pattern ###
 `sed -n -e '/^{"pattern"/p' infile.txt` 
 
