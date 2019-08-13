@@ -13,6 +13,7 @@ For example, find all files in a directory tree where the name matches a pattern
 ### Sorting some output and getting the first and last values (lines) ###
 
 `<some command generating output> | sort | sed -n '1p;$p'`
+
 `<some command generating output> | sort | tee >(head -n 1) >(tail -n 1) >/dev/null`
 
 ### Extract lines beginning with a pattern ###
