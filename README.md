@@ -29,3 +29,21 @@ replace DIR_NAME with the directory
 
 ### Kill all processes matching a pattern ###
 `ps aux |grep pattern_of_process |awk '{print $2}' |xargs kill`
+
+### Globbing ###
+Files matching a pattern (.txt extention)
+
+`ls *.txt`
+
+### Extended Globbing ###
+First turn it on:
+
+`shopt -s extglob`
+
+Files not matching a pattern (not .txt extension)
+
+`ls !(*.txt)`
+
+File matching one of a set of patterns
+
+`ls @(*txt|*log)`
