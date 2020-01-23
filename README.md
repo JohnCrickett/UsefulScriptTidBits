@@ -47,3 +47,7 @@ Files not matching a pattern (not .txt extension)
 File matching one of a set of patterns
 
 `ls @(*txt|*log)`
+
+### Squishing JSON ###
+
+`sed 's/\"/\\\"/g' somefile.json | tr -d '\n' | tr -d '[[:blank:]]'`
