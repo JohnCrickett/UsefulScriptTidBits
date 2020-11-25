@@ -3,6 +3,12 @@ Useful script tidbits
 
 ## Bash Scripts ##
 
+### Simple CPU monitoring per core ###
+use top to get the cpu usuage by core every second.
+First set top to show each core, run top and press 1, then Shift + W
+
+`top -b -d 1 | grep %Cpu`
+
 ### Find files with extension and run a command against those files ###
 `find . -name "*.txt" -type f -exec head -n2 {} \;`
 
